@@ -27,9 +27,11 @@
         "venom-bot": "^5.1.0",
         "whatsapp-api": "^0.0.1",
         "whatsapp-web.js": "^1.26.0",
-        "xlsx": "^0.18.5"
+        "xlsx": "^0.18.5",
+        "sharp": "^0.29.3"  // Adicionei a dependência do sharp
     },
     "scripts": {
+        "clean": "npm cache clean --force",
         "postinstall": "npm install --unsafe-perm sharp",
         "start": "node config.js"
     },
